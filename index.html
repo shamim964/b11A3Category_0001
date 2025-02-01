@@ -7,7 +7,30 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<style>
+    .typing-animation {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid black; /* Creates the cursor effect */
+      white-space: nowrap;
+      animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+    }
+  
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
   </head>
   <body>
     <!-- header section -->
@@ -77,6 +100,25 @@
       </header>
 
 <!-- hero  -->
+
+<div
+  class="hero h-[600px]"
+  style="background-image: url(images/cat-big.png);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content ">
+    <div class=" ">
+       
+      <h1 class="mb-5 text-[#111] font-[ADLaM Display] text-[56px] font-normal leading-normal animate-fadeUp typing-animation">
+        Pamper Your Pet, Becausebr <br>   They Deserve the Best
+      </h1>
+      <p>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+      <button class="btn btn-warning">Find a Pet</button>
+    </div>
+  </div>
+</div>
+
+
+
 
 <main class="lg:p-10 sm:p-6">
 <h3 class="card-title text-[35px] my-5">Browse By Categories</h3>
